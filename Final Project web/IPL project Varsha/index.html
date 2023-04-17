@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPL</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <script
+  src="https://code.jquery.com/jquery-3.6.4.min.js"
+  integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+  crossorigin="anonymous"></script>
+
+<body>
+    <header>
+        <div id="head-container">
+            <div id="head-right">
+                <img src="https://rajasthaniroyals.com/wp-content/uploads/2022/11/IPL-2023-match.jpg" alt="Your Logo">
+                <a href="./index.html"><button id="home-button" class="add-button">Home</button></a>
+            </div>
+            <div id="head-left">
+                <div class="search-input">
+                    <a href="" target="_blank" hidden></a>
+                    <input type="text" placeholder="Enter team name...eg CSK">
+                    <!-- auto complete box -->
+                    <div class="autocom-box"></div>
+                    <div class="icon"><i class="fas fa-search"></i></div>
+                </div>
+                    <button id="add-team-button" class="add-button" onclick = "addteamclicked()">
+                        Add Team</button>
+                    <button id="add-player-button" class="add-button" onclick = "addPlayerClicked()">
+                        Add Player</button>
+                    
+                </div>
+            </div>
+    </header>
+    <div>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="https://c.ndtvimg.com/2022-05/b4b1tdu8_narendra-modi-stadium-ipl-2022_625x300_29_May_22.jpeg?im=FeatureCrop,algorithm=dnn,width=1200,height=675"
+                    style="width:100%">
+
+            </div>
+            <div class="mySlides fade">
+                <img src="https://wallpapercave.com/wp/wp3991161.jpg" style="width:100%">
+
+
+            </div>
+            <div class="mySlides fade">
+                <img src="https://static.toiimg.com/thumb/msid-91880460,resizemode-4,width-1200,height-900/91880460.jpg"
+                    style="width:100%">
+
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+    </div>
+
+    <!-- <div id="first-main"> -->
+    <h1 id="slogan">2023 IPL teams</h1>
+    <div id="first-main">
+        <div id="container_teams"></div>
+
+    </div>
+
+
+    <!-- <div class="main">
+            
+            </div>
+        </div> -->
+
+    <footer>
+        <div>
+            <p class="footer-heading">Online Store</p>
+            <a href="/" class="footer-link">player profile</a>
+            <a href="/" class="footer-link">team profile</a>
+            <a href="/" class="footer-link">player cost</a>
+            <a href="/" class="footer-link">team value</a>
+        </div>
+
+        <div>
+            <p class="footer-heading">Helpful links</p>
+            <a href="./index.html" class="footer-link">Home</a>
+            <a href="/" class="footer-link">About</a>
+            <a href="/" class="footer-link">contact</a>
+
+        </div>
+
+        <div>
+            <p class="footer-heading">Partners</p>
+            <a href="/" class="footer-link">Mumbai Indians</p>
+                <a href="/" class="footer-link">Pune WarriorsIndia </a>
+                <a href="/" class="footer-link">Chennai Super Kings</a>
+                <a href="/" class="footer-link">Rajasthan Royals</a>
+                <a href="/" class="footer-link">Delhi Capitals</a>
+                <a href="/" class="footer-link">+Many More</a>
+        </div>
+
+        <div>
+            <p class="footer-heading">Address</p>
+            <a href="/" class="footer-link">building 101</a>
+            <a href="/" class="footer-link">central avenue</a>
+            <a href="/" class="footer-link">la-904322</a>
+            <a href="/" class="footer-link">united states</a>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+
+</body>
+
+</html>
